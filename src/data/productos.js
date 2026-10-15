@@ -1,0 +1,302 @@
+// Datos de la tienda.
+// Todos los productos salen de este array de objetos. Las imágenes están en public/img.
+// etiqueta puede ser "Nuevo", "Oferta", "Más vendido" o "" (sin etiqueta).
+// precioAnterior solo lo tienen los productos en oferta (para mostrar el precio tachado).
+
+export const categorias = ["Interior", "Exterior", "Suculentas", "Macetas", "Accesorios"];
+
+const productos = [
+  {
+    id: 1,
+    nombre: "Monstera Deliciosa",
+    categoria: "Interior",
+    precio: 18500,
+    imagen: "/img/monstera.svg",
+    descripcion: "La planta de hojas grandes y caladas que llena de verde cualquier rincón.",
+    descripcionLarga:
+      "La Monstera es una de las plantas de interior más elegidas por sus hojas enormes con cortes naturales. Crece rápido, es resistente y se adapta muy bien a departamentos luminosos. Ideal para darle un toque tropical al living.",
+    stock: 6,
+    etiqueta: "Más vendido",
+    caracteristicas: [
+      "Altura aproximada: 60 cm",
+      "Luz: indirecta brillante",
+      "Riego: una vez por semana",
+      "Incluye maceta de cerámica blanca de 17 cm",
+    ],
+  },
+  {
+    id: 2,
+    nombre: "Potus Dorado",
+    categoria: "Interior",
+    precio: 7200,
+    imagen: "/img/potus.svg",
+    descripcion: "Colgante, todoterreno y perfecta para empezar con las plantas.",
+    descripcionLarga:
+      "El Potus es la planta ideal si recién empezás: tolera poca luz, perdona algún olvido de riego y sus guías crecen colgando de estantes o macetas altas. Sus hojas tienen vetas amarillas que iluminan cualquier ambiente.",
+    stock: 15,
+    etiqueta: "",
+    caracteristicas: [
+      "Largo de las guías: 40 cm aprox.",
+      "Luz: media o indirecta",
+      "Riego: cuando la tierra está seca",
+      "Maceta de terracota de 14 cm",
+    ],
+  },
+  {
+    id: 3,
+    nombre: "Sansevieria",
+    categoria: "Interior",
+    precio: 9800,
+    imagen: "/img/sansevieria.svg",
+    descripcion: "También llamada lengua de suegra. Casi no necesita cuidados.",
+    descripcionLarga:
+      "La Sansevieria es famosa por ser casi indestructible. Sus hojas erguidas con bordes amarillos quedan muy bien en dormitorios y oficinas, y necesita muy poca agua. Es una de las plantas recomendadas para purificar el aire.",
+    stock: 0,
+    etiqueta: "",
+    caracteristicas: [
+      "Altura aproximada: 45 cm",
+      "Luz: tolera poca luz",
+      "Riego: cada 15 días",
+      "Maceta de cerámica crema de 15 cm",
+    ],
+  },
+  {
+    id: 4,
+    nombre: "Ficus Lyrata",
+    categoria: "Interior",
+    precio: 24900,
+    imagen: "/img/ficus-lyrata.svg",
+    descripcion: "Arbolito de interior con hojas grandes en forma de violín.",
+    descripcionLarga:
+      "El Ficus Lyrata es la planta protagonista de cualquier living. Sus hojas grandes y brillantes en forma de violín le dan mucha presencia. Necesita un lugar luminoso y fijo, porque no le gusta que la cambien de lugar.",
+    stock: 3,
+    etiqueta: "Nuevo",
+    caracteristicas: [
+      "Altura aproximada: 90 cm",
+      "Luz: mucha luz indirecta",
+      "Riego: una vez por semana",
+      "Maceta de terracota de 22 cm",
+    ],
+  },
+  {
+    id: 5,
+    nombre: "Helecho Boston",
+    categoria: "Interior",
+    precio: 8600,
+    imagen: "/img/helecho.svg",
+    descripcion: "Frondoso y fresco, ideal para baños y lugares húmedos.",
+    descripcionLarga:
+      "El Helecho Boston tiene frondas largas y arqueadas que caen con mucho volumen. Le encanta la humedad, por eso es perfecto para baños con ventana o para pulverizar sus hojas seguido. Queda hermoso en macetas colgantes.",
+    stock: 8,
+    etiqueta: "",
+    caracteristicas: [
+      "Diámetro de la planta: 50 cm aprox.",
+      "Luz: indirecta, sin sol directo",
+      "Riego: frecuente, tierra siempre húmeda",
+      "Maceta de terracota de 17 cm",
+    ],
+  },
+  {
+    id: 6,
+    nombre: "Lavanda",
+    categoria: "Exterior",
+    precio: 6400,
+    precioAnterior: 8000,
+    imagen: "/img/lavanda.svg",
+    descripcion: "Aromática, con flores violetas que atraen mariposas.",
+    descripcionLarga:
+      "La Lavanda es una aromática resistente al sol y a la sequía. Sus espigas violetas perfuman el balcón o el jardín y atraen abejas y mariposas. También podés cortar sus flores para hacer saquitos aromáticos.",
+    stock: 12,
+    etiqueta: "Oferta",
+    caracteristicas: [
+      "Altura aproximada: 35 cm",
+      "Luz: sol directo",
+      "Riego: moderado, sin encharcar",
+      "Maceta de terracota de 14 cm",
+    ],
+  },
+  {
+    id: 7,
+    nombre: "Malvón",
+    categoria: "Exterior",
+    precio: 5900,
+    imagen: "/img/malvon.svg",
+    descripcion: "Clásico de los balcones, florece casi todo el año.",
+    descripcionLarga:
+      "El Malvón es un clásico de los patios y balcones. Da racimos de flores rojas durante casi todo el año y es muy fácil de multiplicar por gajos. Necesita sol y riegos moderados para florecer bien.",
+    stock: 0,
+    etiqueta: "",
+    caracteristicas: [
+      "Altura aproximada: 30 cm",
+      "Luz: sol directo o media sombra",
+      "Riego: dos veces por semana en verano",
+      "Maceta de terracota de 14 cm",
+    ],
+  },
+  {
+    id: 8,
+    nombre: "Limonero en maceta",
+    categoria: "Exterior",
+    precio: 32000,
+    imagen: "/img/limonero.svg",
+    descripcion: "Limonero injertado que ya da frutos. ¡Limones en tu balcón!",
+    descripcionLarga:
+      "Este limonero está injertado y adaptado para vivir en maceta, así que da frutos desde chico. Necesita mucho sol y un buen sustrato. Además de los limones, sus flores tienen un perfume increíble.",
+    stock: 2,
+    etiqueta: "Nuevo",
+    caracteristicas: [
+      "Altura aproximada: 80 cm",
+      "Luz: sol directo (mínimo 6 horas)",
+      "Riego: dos o tres veces por semana",
+      "Maceta de terracota de 30 cm",
+    ],
+  },
+  {
+    id: 9,
+    nombre: "Aloe Vera",
+    categoria: "Suculentas",
+    precio: 5200,
+    imagen: "/img/aloe-vera.svg",
+    descripcion: "Suculenta medicinal, muy fácil de cuidar.",
+    descripcionLarga:
+      "El Aloe Vera es una suculenta conocida por el gel de sus hojas, que se usa para calmar quemaduras y cuidar la piel. Necesita mucha luz y poco riego. Es ideal para tener en la cocina o en una ventana soleada.",
+    stock: 20,
+    etiqueta: "",
+    caracteristicas: [
+      "Altura aproximada: 25 cm",
+      "Luz: mucha luz o sol",
+      "Riego: cada 10 a 15 días",
+      "Maceta de terracota de 12 cm",
+    ],
+  },
+  {
+    id: 10,
+    nombre: "Kit Cactus Mini x3",
+    categoria: "Suculentas",
+    precio: 4500,
+    imagen: "/img/cactus-mix.svg",
+    descripcion: "Tres cactus distintos en macetitas de colores.",
+    descripcionLarga:
+      "Un kit de tres cactus mini, cada uno en su macetita: uno columnar, uno redondo y una tuna. Son perfectos para el escritorio o para regalar, y casi no necesitan agua. Los cactus pueden variar un poco respecto de la foto.",
+    stock: 18,
+    etiqueta: "Más vendido",
+    caracteristicas: [
+      "Altura de cada cactus: 8 a 12 cm",
+      "Luz: sol directo",
+      "Riego: cada 15 días (menos en invierno)",
+      "Incluye 3 macetas de 8 cm",
+    ],
+  },
+  {
+    id: 11,
+    nombre: "Echeveria",
+    categoria: "Suculentas",
+    precio: 3900,
+    precioAnterior: 4900,
+    imagen: "/img/echeveria.svg",
+    descripcion: "Suculenta en forma de rosa, en tonos verdes y rosados.",
+    descripcionLarga:
+      "La Echeveria forma una roseta perfecta de hojas carnosas que con el sol toman puntas rosadas. Es una suculenta muy decorativa, ideal para armar centros de mesa o combinar con otras suculentas.",
+    stock: 25,
+    etiqueta: "Oferta",
+    caracteristicas: [
+      "Diámetro de la roseta: 10 cm aprox.",
+      "Luz: mucha luz o sol suave",
+      "Riego: cada 10 días",
+      "Maceta de cerámica blanca de 9 cm",
+    ],
+  },
+  {
+    id: 12,
+    nombre: "Maceta de cerámica blanca",
+    categoria: "Macetas",
+    precio: 11500,
+    imagen: "/img/maceta-ceramica.svg",
+    descripcion: "Maceta esmaltada de diseño moderno, con plato incluido.",
+    descripcionLarga:
+      "Maceta de cerámica esmaltada en color blanco con terminación brillante. Tiene agujero de drenaje y viene con su plato a juego, así podés usarla adentro sin manchar los muebles.",
+    stock: 10,
+    etiqueta: "",
+    caracteristicas: [
+      "Diámetro: 17 cm",
+      "Alto: 16 cm",
+      "Con agujero de drenaje",
+      "Incluye plato a juego",
+    ],
+  },
+  {
+    id: 13,
+    nombre: "Maceta de terracota",
+    categoria: "Macetas",
+    precio: 6900,
+    imagen: "/img/maceta-terracota.svg",
+    descripcion: "La maceta de barro de siempre: deja respirar las raíces.",
+    descripcionLarga:
+      "Maceta clásica de barro cocido hecha por artesanos de la zona. El barro deja respirar las raíces y evita el exceso de humedad, por eso es la mejor opción para suculentas, cactus y aromáticas.",
+    stock: 0,
+    etiqueta: "",
+    caracteristicas: [
+      "Diámetro: 20 cm",
+      "Alto: 18 cm",
+      "Barro cocido artesanal",
+      "Incluye plato",
+    ],
+  },
+  {
+    id: 14,
+    nombre: "Sustrato premium 10 L",
+    categoria: "Accesorios",
+    precio: 5600,
+    imagen: "/img/sustrato.svg",
+    descripcion: "Tierra preparada con nutrientes para todo tipo de plantas.",
+    descripcionLarga:
+      "Sustrato listo para usar, con turba, perlita y compost. Retiene la humedad justa y drena bien el agua, así las raíces crecen sanas. Sirve para trasplantes y para plantas de interior y exterior.",
+    stock: 30,
+    etiqueta: "",
+    caracteristicas: [
+      "Contenido: 10 litros",
+      "Con turba, perlita y compost",
+      "Para interior y exterior",
+      "Bolsa de papel reciclable",
+    ],
+  },
+  {
+    id: 15,
+    nombre: "Regadera metálica",
+    categoria: "Accesorios",
+    precio: 13900,
+    imagen: "/img/regadera.svg",
+    descripcion: "Regadera de chapa con pico largo y flor de riego.",
+    descripcionLarga:
+      "Regadera de metal galvanizado con pico largo para llegar a las macetas más escondidas. Trae una flor de riego desmontable para mojar las hojas con una lluvia suave. Linda para usar y también para decorar.",
+    stock: 7,
+    etiqueta: "Nuevo",
+    caracteristicas: [
+      "Capacidad: 2 litros",
+      "Metal galvanizado",
+      "Flor de riego desmontable",
+      "Pico largo de 30 cm",
+    ],
+  },
+  {
+    id: 16,
+    nombre: "Fertilizante orgánico",
+    categoria: "Accesorios",
+    precio: 4800,
+    precioAnterior: 6000,
+    imagen: "/img/fertilizante.svg",
+    descripcion: "Abono líquido natural para que tus plantas crezcan fuertes.",
+    descripcionLarga:
+      "Fertilizante líquido elaborado a partir de humus de lombriz y algas. Se diluye en el agua de riego y aporta los nutrientes que las plantas necesitan para crecer y florecer. Es apto para todo tipo de plantas.",
+    stock: 14,
+    etiqueta: "Oferta",
+    caracteristicas: [
+      "Contenido: 500 ml",
+      "Dosis: 5 ml por litro de agua",
+      "100% orgánico",
+      "Incluye vasito medidor",
+    ],
+  },
+];
+
+export default productos;

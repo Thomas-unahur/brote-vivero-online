@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <path id="mf" d="M0 -12C8 -2 30 0 40 -14L14 -28L44 -21C48 -28 49 -34 48 -40L14 -52L46 -47C44 -54 42 -59 39 -63L12 -74L34 -70C28 -84 14 -98 0 -104C-14 -98 -28 -84 -34 -70L-12 -74L-39 -63C-42 -59 -44 -54 -46 -47L-14 -52L-48 -40C-49 -34 -48 -28 -44 -21L-14 -28L-40 -14C-30 0 -8 -2 0 -12Z"/>
+    <path id="ml" d="M0 -104C-14 -98 -28 -84 -34 -70L-12 -74L-39 -63C-42 -59 -44 -54 -46 -47L-14 -52L-48 -40C-49 -34 -48 -28 -44 -21L-14 -28L-40 -14C-30 0 -8 -2 0 -12Z"/>
+    <g id="mon"><use href="#mf" fill="#3F8A57"/><use href="#ml" fill="#5FA36F"/><path d="M0 -13V-97" stroke="#2F6B45" stroke-width="2.5" stroke-linecap="round"/></g>
+    <g id="monD"><use href="#mf" fill="#2F6B45"/><use href="#ml" fill="#3F8A57"/><path d="M0 -13V-97" stroke="#1F4D33" stroke-width="2.5" stroke-linecap="round"/></g>
+    <path id="pf" d="M0 0C-27 -22 -29 -82 0 -112C29 -82 27 -22 0 0Z"/>
+    <path id="ph" d="M0 0C-27 -22 -29 -82 0 -112Z"/>
+    <g id="pdL"><use href="#pf" fill="#3F8A57"/><use href="#ph" fill="#5FA36F"/><path d="M0 -4V-104" stroke="#2F6B45" stroke-width="2"/></g>
+    <g id="pdD"><use href="#pf" fill="#2F6B45"/><use href="#ph" fill="#3F8A57"/><path d="M0 -4V-104" stroke="#1F4D33" stroke-width="2"/></g>
+    <g id="pT"><path d="M-13 -24H13L10 0H-10Z" fill="#C8693F"/><path d="M2 -24H13L10 0H1Z" fill="#A9532E"/><rect x="-15" y="-29" width="30" height="6" rx="1.5" fill="#E08A5F"/><rect x="3" y="-29" width="12" height="6" rx="1.5" fill="#C8693F"/></g>
+    <g id="pW"><path d="M-13 -24H13L10 0H-10Z" fill="#FAF8F3"/><path d="M2 -24H13L10 0H1Z" fill="#E9E4D8"/><rect x="-15" y="-29" width="30" height="6" rx="1.5" fill="#FAF8F3"/><rect x="3" y="-29" width="12" height="6" rx="1.5" fill="#E9E4D8"/></g>
+    <g id="pS"><path d="M-13 -24H13L10 0H-10Z" fill="#9DB89A"/><path d="M2 -24H13L10 0H1Z" fill="#82A07F"/><rect x="-15" y="-29" width="30" height="6" rx="1.5" fill="#B3CBAF"/><rect x="3" y="-29" width="12" height="6" rx="1.5" fill="#9DB89A"/></g>
+    <g id="bush"><ellipse cx="-8" cy="-35" rx="10" ry="9" fill="#3F8A57"/><ellipse cx="8" cy="-36" rx="10" ry="9" fill="#2F6B45"/><ellipse cy="-45" rx="11" ry="10" fill="#5FA36F"/><ellipse cx="-4" cy="-48" rx="5" ry="4" fill="#8FC79A"/></g>
+    <g id="spk"><path d="M-12 -26C-18 -36 -20 -44 -20 -54C-12 -46 -8 -36 -5 -26Z" fill="#5FA36F"/><path d="M-6 -26C-10 -40 -9 -52 -4 -64C0 -52 0 -38 0 -26Z" fill="#3F8A57"/><path d="M1 -26C3 -44 5 -56 9 -66C12 -52 9 -38 7 -26Z" fill="#2F6B45"/><path d="M6 -26C12 -34 16 -40 20 -48C19 -38 15 -30 11 -26Z" fill="#5FA36F"/></g>
+    <g id="flor"><ellipse cx="-7" cy="-33" rx="9" ry="5" transform="rotate(-30 -7 -33)" fill="#3F8A57"/><ellipse cx="7" cy="-34" rx="9" ry="5" transform="rotate(30 7 -34)" fill="#2F6B45"/><ellipse cy="-38" rx="5" ry="9" fill="#5FA36F"/><circle cx="-7" cy="-46" r="5"/><circle cx="6" cy="-49" r="5"/><circle cy="-43" r="4"/></g>
+    <g id="cac"><rect x="-8" y="-60" width="16" height="36" rx="8" fill="#3F8A57"/><rect x="-5" y="-56" width="4" height="28" rx="2" fill="#5FA36F"/><path d="M7 -42H12V-50A3 3 0 0 1 18 -50V-42A6 6 0 0 1 12 -36H7Z" fill="#2F6B45"/><circle cy="-60" r="3" fill="#F28CA0"/></g>
+    <g id="vn"><path d="M-12 -25C-19 -8 -16 10 -18 26M-2 -25C0 0 -4 18 0 34M10 -25C17 -6 14 10 16 22" fill="none" stroke="#3F8A57" stroke-width="1.6"/><g fill="#5FA36F"><ellipse cx="-17" cy="-6" rx="3.5" ry="5"/><ellipse cx="-16" cy="12" rx="3.5" ry="5"/><ellipse cx="-18" cy="26" rx="3.5" ry="5"/><ellipse cx="-1" cy="4" rx="3.5" ry="5"/><ellipse cx="-3" cy="20" rx="3.5" ry="5"/><ellipse cy="34" rx="3.5" ry="5"/><ellipse cx="15" cy="-4" rx="3.5" ry="5"/><ellipse cx="15" cy="12" rx="3.5" ry="5"/><ellipse cx="16" cy="22" rx="3.5" ry="5"/></g></g>
+  </defs>
+
+  <!-- cielo -->
+  <rect width="800" height="600" fill="#E3EFE2"/>
+  <circle cx="694" cy="92" r="52" fill="#EDEDCB"/>
+  <circle cx="694" cy="92" r="36" fill="#F6D98A"/>
+  <g fill="#F5F9F3">
+    <ellipse cx="120" cy="104" rx="56" ry="16"/><ellipse cx="104" cy="92" rx="26" ry="20"/><ellipse cx="138" cy="88" rx="22" ry="17"/>
+    <ellipse cx="560" cy="58" rx="40" ry="11"/><ellipse cx="572" cy="48" rx="20" ry="14"/>
+  </g>
+  <path d="M0 482C110 438 230 444 320 470C430 432 610 418 800 468V530H0Z" fill="#D2E6CD"/>
+
+  <!-- suelo -->
+  <rect y="520" width="800" height="80" fill="#CBE0BF"/>
+  <path d="M352 520H448L520 600H280Z" fill="#E6DFCF"/>
+  <g fill="#D6CFBF"><ellipse cx="380" cy="545" rx="5" ry="2"/><ellipse cx="428" cy="566" rx="6" ry="2"/><ellipse cx="350" cy="584" rx="5" ry="2"/><ellipse cx="460" cy="590" rx="5" ry="2"/></g>
+
+  <!-- invernadero: vidrio -->
+  <path d="M130 480V250L400 112L670 250V480Z" fill="#D5E9D6"/>
+
+  <!-- estantes -->
+  <g fill="#94643A">
+    <rect x="140" y="362" width="5" height="116"/><rect x="326" y="362" width="5" height="116"/>
+    <rect x="470" y="362" width="5" height="116"/><rect x="655" y="362" width="5" height="116"/>
+  </g>
+  <g fill="#B9824F">
+    <rect x="136" y="362" width="198" height="8"/><rect x="136" y="446" width="198" height="8"/>
+    <rect x="466" y="362" width="198" height="8"/><rect x="466" y="446" width="198" height="8"/>
+  </g>
+  <g fill="#94643A">
+    <rect x="136" y="368" width="198" height="3"/><rect x="136" y="452" width="198" height="3"/>
+    <rect x="466" y="368" width="198" height="3"/><rect x="466" y="452" width="198" height="3"/>
+  </g>
+  <use href="#bush" x="160" y="362"/><use href="#pT" x="160" y="362"/>
+  <use href="#flor" x="198" y="362" fill="#E2526B"/><use href="#pW" x="198" y="362"/>
+  <use href="#spk" x="270" y="362"/><use href="#pS" x="270" y="362"/>
+  <use href="#cac" x="308" y="362"/><use href="#pT" x="308" y="362"/>
+  <use href="#flor" x="162" y="446" fill="#8E7CC3"/><use href="#pT" x="162" y="446"/>
+  <use href="#spk" x="200" y="446"/><use href="#pW" x="200" y="446"/>
+  <use href="#bush" x="270" y="446"/><use href="#pT" x="270" y="446"/>
+  <use href="#flor" x="308" y="446" fill="#F2C14E"/><use href="#pS" x="308" y="446"/>
+  <use href="#cac" x="492" y="362"/><use href="#pW" x="492" y="362"/>
+  <use href="#bush" x="530" y="362"/><use href="#pT" x="530" y="362"/>
+  <use href="#flor" x="598" y="362" fill="#F28CA0"/><use href="#pT" x="598" y="362"/>
+  <use href="#spk" x="638" y="362"/><use href="#pW" x="638" y="362"/>
+  <use href="#bush" x="492" y="446"/><use href="#pS" x="492" y="446"/>
+  <use href="#flor" x="530" y="446" fill="#E2526B"/><use href="#pT" x="530" y="446"/>
+  <use href="#spk" x="598" y="446"/><use href="#pT" x="598" y="446"/>
+  <use href="#flor" x="638" y="446" fill="#B4A7DE"/><use href="#pW" x="638" y="446"/>
+
+  <!-- macetas colgantes -->
+  <path d="M290 172L276 213M290 172L304 213M510 172L496 213M510 172L524 213" stroke="#6F7B76" stroke-width="1.5"/>
+  <use href="#bush" x="290" y="240"/><use href="#pW" x="290" y="240"/><use href="#vn" x="290" y="240"/>
+  <use href="#bush" x="510" y="240"/><use href="#pT" x="510" y="240"/><use href="#vn" x="510" y="240"/>
+
+  <!-- ficus detras de la puerta -->
+  <path d="M400 428C398 400 404 372 400 330" fill="none" stroke="#94643A" stroke-width="4" stroke-linecap="round"/>
+  <g>
+    <ellipse cx="386" cy="392" rx="11" ry="16" transform="rotate(-50 386 392)" fill="#3F8A57"/>
+    <ellipse cx="414" cy="384" rx="11" ry="16" transform="rotate(48 414 384)" fill="#2F6B45"/>
+    <ellipse cx="382" cy="360" rx="12" ry="17" transform="rotate(-42 382 360)" fill="#5FA36F"/>
+    <ellipse cx="420" cy="352" rx="12" ry="17" transform="rotate(40 420 352)" fill="#3F8A57"/>
+    <ellipse cx="386" cy="328" rx="13" ry="18" transform="rotate(-28 386 328)" fill="#3F8A57"/>
+    <ellipse cx="416" cy="322" rx="13" ry="18" transform="rotate(26 416 322)" fill="#5FA36F"/>
+    <ellipse cx="401" cy="304" rx="13" ry="19" fill="#8FC79A"/>
+  </g>
+  <use href="#pT" transform="translate(400 478) scale(1.8)"/>
+
+  <!-- reflejos del vidrio -->
+  <g fill="#FFFFFF" opacity=".35">
+    <path d="M150 478L196 254H212L166 478Z"/><path d="M178 478L224 254H230L184 478Z"/>
+    <path d="M480 478L526 254H542L496 478Z"/><path d="M590 478L636 254H644L598 478Z"/>
+    <path d="M300 250L330 168H342L312 250Z"/><path d="M370 470L410 300H420L380 470Z"/>
+  </g>
+
+  <!-- estructura -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M235 250V196M340 250V141M460 250V141M565 250V196" stroke="#2F6B45" stroke-width="5"/>
+    <path d="M130 290H340M460 290H670M235 250V480M565 250V480" stroke="#1F4D33" stroke-width="6"/>
+    <rect x="348" y="296" width="104" height="182" stroke="#2F6B45" stroke-width="5"/>
+    <path d="M348 392H452" stroke="#2F6B45" stroke-width="5"/>
+    <rect x="130" y="250" width="540" height="230" stroke="#1F4D33" stroke-width="8"/>
+    <path d="M340 250V480M460 250V480M340 290H460" stroke="#1F4D33" stroke-width="7"/>
+    <circle cx="400" cy="196" r="20" fill="#D5E9D6" stroke="#1F4D33" stroke-width="6"/>
+    <path d="M400 178V214M382 196H418" stroke="#2F6B45" stroke-width="3"/>
+    <path d="M120 256L400 106L680 256" stroke="#1F4D33" stroke-width="13"/>
+  </g>
+  <circle cx="440" cy="392" r="4.5" fill="#F2C14E"/>
+
+  <!-- zocalo de madera -->
+  <rect x="122" y="478" width="556" height="44" fill="#B9824F"/>
+  <rect x="122" y="478" width="556" height="6" fill="#94643A"/>
+  <path d="M122 502H678" stroke="#A3703F" stroke-width="2"/>
+  <rect x="344" y="478" width="112" height="44" fill="#A3703F"/>
+  <rect x="344" y="478" width="112" height="6" fill="#94643A"/>
+
+  <!-- sombras de piso -->
+  <g fill="#B9D5AC">
+    <ellipse cx="96" cy="574" rx="62" ry="7"/><ellipse cx="712" cy="574" rx="62" ry="7"/>
+    <ellipse cx="596" cy="576" rx="48" ry="5"/><ellipse cx="305" cy="550" rx="22" ry="3"/><ellipse cx="497" cy="550" rx="22" ry="3"/>
+  </g>
+
+  <!-- macetitas junto a la puerta -->
+  <use href="#flor" transform="translate(305 549) scale(1.3)" fill="#E2526B"/><use href="#pT" transform="translate(305 549) scale(1.3)"/>
+  <use href="#bush" transform="translate(497 549) scale(1.3)"/><use href="#pW" transform="translate(497 549) scale(1.3)"/>
+
+  <!-- regadera -->
+  <path d="M572 530C574 506 604 506 608 530" fill="none" stroke="#6F7B76" stroke-width="5" stroke-linecap="round"/>
+  <path d="M564 540C548 542 548 562 563 566" fill="none" stroke="#6F7B76" stroke-width="5" stroke-linecap="round"/>
+  <path d="M612 562L650 522L655 527L615 572Z" fill="#9AA5A0"/>
+  <ellipse cx="655" cy="521" rx="5" ry="9" transform="rotate(45 655 521)" fill="#6F7B76"/>
+  <path d="M566 530H612L616 576H562Z" fill="#9AA5A0"/>
+  <path d="M566 530H580L578 576H562Z" fill="#C4CCC8"/>
+  <rect x="563" y="527" width="52" height="6" rx="2" fill="#6F7B76"/>
+  <rect x="560" y="570" width="58" height="6" rx="2" fill="#6F7B76"/>
+
+  <!-- monstera grande (izquierda) -->
+  <g fill="none" stroke="#3F8A57" stroke-width="3.5" stroke-linecap="round">
+    <path d="M92 506Q80 480 71 462M100 506Q114 480 124 454M96 506Q97 470 97 440M88 506Q72 500 60 488M104 506Q122 500 140 486"/>
+  </g>
+  <use href="#monD" transform="translate(76 470) rotate(-32) scale(.75)"/>
+  <use href="#monD" transform="translate(120 462) rotate(26) scale(.72)"/>
+  <use href="#mon" transform="translate(98 450) rotate(-3) scale(.85)"/>
+  <use href="#mon" transform="translate(66 492) rotate(-55) scale(.62)"/>
+  <use href="#mon" transform="translate(134 490) rotate(60) scale(.62)"/>
+  <ellipse cx="96" cy="504" rx="40" ry="5" fill="#4A3B2F"/>
+  <path d="M54 514H138L128 572H64Z" fill="#C8693F"/>
+  <path d="M106 514H138L128 572H104Z" fill="#A9532E"/>
+  <path d="M54 514H66L70 572H64Z" fill="#E08A5F"/>
+  <rect x="48" y="502" width="96" height="14" rx="3" fill="#E08A5F"/>
+  <path d="M108 502H141A3 3 0 0 1 144 505V513A3 3 0 0 1 141 516H108Z" fill="#C8693F"/>
+
+  <!-- ave del paraiso (derecha) -->
+  <g fill="none" stroke="#3F8A57" stroke-width="3.5" stroke-linecap="round">
+    <path d="M706 504Q698 470 690 430M714 504Q718 460 716 410M720 504Q734 470 744 434M708 504Q700 480 700 452"/>
+  </g>
+  <use href="#pdD" transform="translate(700 452) rotate(-55) scale(.7)"/>
+  <use href="#pdD" transform="translate(690 432) rotate(-26) scale(.9)"/>
+  <use href="#pdL" transform="translate(744 434) rotate(22) scale(.8)"/>
+  <use href="#pdL" transform="translate(716 412) rotate(3)"/>
+  <ellipse cx="712" cy="502" rx="40" ry="5" fill="#4A3B2F"/>
+  <path d="M670 512H754L744 572H680Z" fill="#FAF8F3"/>
+  <path d="M722 512H754L744 572H720Z" fill="#E9E4D8"/>
+  <path d="M673 536H751L750 544H674Z" fill="#D6CFBF"/>
+  <rect x="664" y="500" width="96" height="14" rx="3" fill="#FAF8F3"/>
+  <path d="M724 500H757A3 3 0 0 1 760 503V511A3 3 0 0 1 757 514H724Z" fill="#E9E4D8"/>
+</svg>

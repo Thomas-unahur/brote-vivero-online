@@ -1,0 +1,91 @@
+/* =========================================================
+   Estilos globales de Brote (Base para el equipo)
+   ========================================================= */
+
+/* 1. Colores de la marca (variables CSS) */
+:root {
+  --verde-oscuro: #1f4d33;
+  --verde: #2f6b45;
+  --verde-medio: #33774a;
+  --salvia: #8fc79a;
+  --verde-claro: #e3efe2;
+  --crema: #f8f4ec;
+  --fondo-imagen: #f1eee4;
+  --terracota: #c8693f;
+  --terracota-oscuro: #a9532e;
+  --amarillo: #f2c14e;
+  --texto: #1d2a22;
+  --texto-suave: #56645a;
+  --borde: #e4ddcf;
+}
+
+/* 2. Tipografía y fondos generales */
+body {
+  font-family: "Nunito", system-ui, -apple-system, sans-serif;
+  background-color: var(--crema);
+  color: var(--texto);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
+  color: var(--texto);
+}
+
+a {
+  color: var(--verde);
+}
+
+a:hover {
+  color: var(--verde-oscuro);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 3. Utilidades rápidas de texto y fondos para usar en cualquier componente */
+.texto-suave { color: var(--texto-suave); }
+.texto-verde { color: var(--verde-medio); font-weight: 700; }
+.bg-terracota { background-color: var(--terracota-oscuro); color: #ffffff; }
+.bg-verde { background-color: var(--verde); color: #ffffff; }
+.bg-amarillo { background-color: var(--amarillo); color: #3d2f05; }
+
+/* 4. Adaptación de Botones de Bootstrap a la marca
+   Si usan <button className="btn btn-verde"> tomará estos colores */
+.btn {
+  font-weight: 700;
+  border-radius: 999px;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.btn-verde {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: var(--verde);
+  --bs-btn-border-color: var(--verde);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--verde-oscuro);
+  --bs-btn-hover-border-color: var(--verde-oscuro);
+  --bs-btn-disabled-color: var(--texto-suave);
+  --bs-btn-disabled-bg: #e3e7e4;
+  --bs-btn-disabled-border-color: #cfd6d1;
+}
+
+.btn-outline-verde {
+  --bs-btn-color: var(--verde);
+  --bs-btn-border-color: var(--verde);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--verde);
+  --bs-btn-hover-border-color: var(--verde);
+}
+
+.btn-terracota {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: var(--terracota);
+  --bs-btn-border-color: var(--terracota);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--terracota-oscuro);
+  --bs-btn-hover-border-color: var(--terracota-oscuro);
+}

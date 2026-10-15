@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#F1EEE4"/>
+  <circle cx="200" cy="190" r="150" fill="#E4ECDD"/>
+  <ellipse cx="200" cy="352" rx="120" ry="14" fill="#DCD5C4"/>
+
+  <!-- platito: borde y fondo -->
+  <ellipse cx="200" cy="322" rx="106" ry="12" fill="#FAF8F3"/>
+  <ellipse cx="200" cy="323" rx="98" ry="9" fill="#E9E4D8"/>
+  <path d="M232 314.5 A98 9 0 0 1 298 323 A98 9 0 0 1 232 331.5 Z" fill="#D6CFBF"/>
+
+  <!-- cuerpo de la maceta (tronco de cono) -->
+  <path d="M106 128 L294 128 L276 330 Q275 336 268 336 L132 336 Q125 336 124 330 Z" fill="#FAF8F3"/>
+  <path d="M245 128 L294 128 L276 330 Q275 336 268 336 L236 336 Z" fill="#E9E4D8"/>
+  <!-- sombra que proyecta el aro -->
+  <path d="M106 128 L294 128 L293.3 136 L106.7 136 Z" fill="#E9E4D8"/>
+  <path d="M245 128 L294 128 L293.3 136 L244.6 136 Z" fill="#D6CFBF"/>
+  <!-- reflejo vertical -->
+  <path d="M126 146 L140 146 L151 314 L139 314 Z" fill="#FFFFFF"/>
+  <path d="M146 152 L151 152 L159 290 L155 290 Z" fill="#FFFFFF"/>
+  <!-- ranura decorativa -->
+  <path d="M115.1 230 L284.9 230 L284.5 234 L115.5 234 Z" fill="#D6CFBF"/>
+  <path d="M116.2 242 L283.8 242 L283.4 246 L116.6 246 Z" fill="#D6CFBF"/>
+
+  <!-- aro superior -->
+  <rect x="96" y="100" width="208" height="28" rx="8" fill="#FAF8F3"/>
+  <path d="M250 112 L304 112 L304 120 Q304 128 296 128 L250 128 Z" fill="#E9E4D8"/>
+  <!-- borde trasero del aro (vista levemente desde arriba) -->
+  <path d="M96 112 A104 16.5 0 0 1 304 112 Z" fill="#FAF8F3"/>
+
+  <!-- boca: pared interior -->
+  <ellipse cx="200" cy="112" rx="98" ry="13" fill="#D6CFBF"/>
+  <ellipse cx="194" cy="109" rx="86" ry="9.5" fill="#C9C1AF"/>
+
+  <!-- platito: frente -->
+  <path d="M94 322 A106 12 0 0 0 306 322 L298 340 A98 10 0 0 1 102 340 Z" fill="#E9E4D8"/>
+  <path d="M94 322 A106 12 0 0 0 128 330.8 L130 347 A98 10 0 0 1 102 340 Z" fill="#FAF8F3"/>
+  <path d="M250 332.6 A106 12 0 0 0 306 322 L298 340 A98 10 0 0 1 246 348.8 Z" fill="#D6CFBF"/>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <g id="hojaD">
+      <path d="M-15 0C-18-70-2-135 25-170C22-130 18-70 15 0Z"/>
+      <path d="M-14.4-37L-19.5-44.5L-14.9-46ZM-10.2-76L-15-84L-10.6-85.5ZM-2-111L-6.5-119.5L-2.2-121ZM16.6-37L21.8-44.5L17.4-46ZM18.6-74L23.8-82L19.2-83ZM20.6-109L25.2-117L21.2-118Z"/>
+      <path fill="#1F4D33" fill-opacity="0.24" d="M0 0C2-70 10-135 25-170C22-130 18-70 15 0ZM16.6-37L21.8-44.5L17.4-46ZM18.6-74L23.8-82L19.2-83ZM20.6-109L25.2-117L21.2-118Z"/>
+      <path fill="#FFFFFF" fill-opacity="0.2" d="M-11-8C-13-62-3-122 15-152C1-124-7-62-6-8Z"/>
+      <g fill="#F4F8F2" fill-opacity="0.75">
+        <ellipse cx="-6" cy="-28" rx="2.4" ry="1.2"/>
+        <ellipse cx="5" cy="-40" rx="2.4" ry="1.2"/>
+        <ellipse cx="-4" cy="-58" rx="2.2" ry="1.1"/>
+        <ellipse cx="8" cy="-70" rx="2.2" ry="1.1"/>
+        <ellipse cx="0" cy="-88" rx="2" ry="1.1"/>
+        <ellipse cx="11" cy="-100" rx="2" ry="1"/>
+        <ellipse cx="7" cy="-118" rx="1.8" ry="1"/>
+        <ellipse cx="15" cy="-134" rx="1.6" ry="0.9"/>
+      </g>
+    </g>
+    <g id="hojaI">
+      <path d="M15 0C18-70 2-135-25-170C-22-130-18-70-15 0Z"/>
+      <path d="M-16.6-37L-21.8-44.5L-17.4-46ZM-18.6-74L-23.8-82L-19.2-83ZM-20.6-109L-25.2-117L-21.2-118ZM14.4-37L19.5-44.5L14.9-46ZM10.2-76L15-84L10.6-85.5ZM2-111L6.5-119.5L2.2-121Z"/>
+      <path fill="#1F4D33" fill-opacity="0.24" d="M0 0C-2-70-10-135-25-170C2-135 18-70 15 0ZM14.4-37L19.5-44.5L14.9-46ZM10.2-76L15-84L10.6-85.5ZM2-111L6.5-119.5L2.2-121Z"/>
+      <path fill="#FFFFFF" fill-opacity="0.2" d="M-12-8C-15-62-17-118-21-148C-11-118-7-62-6-8Z"/>
+      <g fill="#F4F8F2" fill-opacity="0.75">
+        <ellipse cx="-6" cy="-28" rx="2.4" ry="1.2"/>
+        <ellipse cx="5" cy="-40" rx="2.4" ry="1.2"/>
+        <ellipse cx="-9" cy="-58" rx="2.2" ry="1.1"/>
+        <ellipse cx="3" cy="-70" rx="2.2" ry="1.1"/>
+        <ellipse cx="-8" cy="-88" rx="2" ry="1.1"/>
+        <ellipse cx="0" cy="-100" rx="2" ry="1"/>
+        <ellipse cx="-12" cy="-118" rx="1.8" ry="1"/>
+        <ellipse cx="-17" cy="-136" rx="1.6" ry="0.9"/>
+      </g>
+    </g>
+    <clipPath id="aro"><path d="M118 250L118 269C118 275 150 280 200 280C250 280 282 275 282 269L282 250A82 11 0 0 1 118 250Z"/></clipPath>
+    <clipPath id="cuerpo"><path d="M131 266L148 345Q149 350 156 350L244 350Q251 350 252 345L269 266Z"/></clipPath>
+  </defs>
+
+  <rect width="400" height="400" fill="#F1EEE4"/>
+  <circle cx="200" cy="190" r="150" fill="#E4ECDD"/>
+  <ellipse cx="200" cy="352" rx="120" ry="14" fill="#DCD5C4"/>
+
+  <!-- boca de la maceta -->
+  <ellipse cx="200" cy="250" rx="82" ry="11" fill="#E08A5F"/>
+  <ellipse cx="200" cy="251" rx="74" ry="8.5" fill="#8E4426"/>
+  <ellipse cx="200" cy="253" rx="70" ry="6.5" fill="#4A3B2F"/>
+
+  <!-- hojas de atras -->
+  <use xlink:href="#hojaD" href="#hojaD" fill="#5A8F76" transform="translate(204 256) rotate(-6) scale(1.21 1.08)"/>
+  <use xlink:href="#hojaI" href="#hojaI" fill="#5A8F76" transform="translate(196 256) rotate(9) scale(1.142 1.02)"/>
+  <!-- hojas del medio -->
+  <use xlink:href="#hojaI" href="#hojaI" fill="#6FA38A" transform="translate(194 258) rotate(-30) scale(1.075 0.96)"/>
+  <use xlink:href="#hojaD" href="#hojaD" fill="#6FA38A" transform="translate(206 258) rotate(30) scale(1.075 0.96)"/>
+  <!-- hojas bajas -->
+  <use xlink:href="#hojaI" href="#hojaI" fill="#76AA90" transform="translate(190 260) rotate(-58) scale(0.918 0.82)"/>
+  <use xlink:href="#hojaD" href="#hojaD" fill="#76AA90" transform="translate(210 260) rotate(57) scale(0.918 0.82)"/>
+  <!-- hojas de adelante -->
+  <use xlink:href="#hojaD" href="#hojaD" fill="#7FB398" transform="translate(202 262) rotate(4) scale(0.896 0.8)"/>
+  <use xlink:href="#hojaI" href="#hojaI" fill="#86B99E" transform="translate(196 264) rotate(-22) scale(0.672 0.6)"/>
+  <use xlink:href="#hojaD" href="#hojaD" fill="#86B99E" transform="translate(206 264) rotate(24) scale(0.672 0.6)"/>
+
+  <!-- cuerpo de la maceta -->
+  <g clip-path="url(#cuerpo)">
+    <rect x="120" y="260" width="160" height="95" fill="#C8693F"/>
+    <path d="M226 260L280 260L280 355L216 355Z" fill="#A9532E"/>
+    <path d="M120 260L150 260L162 355L120 355Z" fill="#E08A5F"/>
+    <rect x="120" y="260" width="160" height="26" fill="#8E4426" fill-opacity="0.45"/>
+  </g>
+  <!-- aro de la maceta -->
+  <g clip-path="url(#aro)">
+    <rect x="115" y="238" width="170" height="45" fill="#C8693F"/>
+    <path d="M240 238L285 238L285 283L236 283Z" fill="#A9532E"/>
+    <path d="M115 238L136 238L138 283L115 283Z" fill="#E08A5F"/>
+  </g>
+</svg>

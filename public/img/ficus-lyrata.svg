@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <g id="hoja">
+      <path d="M0 0 C-7 -3 -14 -14 -15 -27 C-16 -38 -21 -46 -25 -58 C-29 -70 -28 -82 -20 -88 C-13 -92 -5 -92 0 -89 Z" stroke="none"/>
+      <path d="M0 0 C7 -3 14 -14 15 -27 C16 -38 21 -46 25 -58 C29 -70 28 -82 20 -88 C13 -92 5 -92 0 -89 Z" fill="currentColor" stroke="none"/>
+      <path d="M0 -2 L0 -86 M0 -18 Q-7 -22 -11 -30 M0 -34 Q-9 -40 -14 -50 M0 -52 Q-11 -58 -18 -70 M0 -68 Q-8 -74 -12 -82 M0 -26 Q7 -30 11 -38 M0 -43 Q10 -49 15 -59 M0 -60 Q11 -66 17 -77" fill="none" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect width="400" height="400" fill="#F1EEE4"/>
+  <circle cx="200" cy="190" r="150" fill="#E4ECDD"/>
+  <ellipse cx="200" cy="352" rx="120" ry="14" fill="#DCD5C4"/>
+  <ellipse cx="200" cy="266" rx="62" ry="7" fill="#A9532E"/>
+  <ellipse cx="200" cy="268" rx="55" ry="5" fill="#4A3B2F"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M201 272 C203 244 196 220 199 192 C202 166 197 144 199 120" stroke="#94643A" stroke-width="6"/>
+    <path d="M198 270 C200 244 193 220 196 194" stroke="#B9824F" stroke-width="2"/>
+    <g stroke="#94643A" stroke-width="3.5">
+      <path d="M199 210 Q180 202 162 182"/>
+      <path d="M200 190 Q220 184 238 168"/>
+      <path d="M199 160 Q186 152 176 136"/>
+      <path d="M199 146 Q210 138 220 124"/>
+    </g>
+  </g>
+  <use href="#hoja" transform="translate(199 122) rotate(0) scale(0.85 0.85)" fill="#3F8A57" color="#2F6B45" stroke="#5FA36F"/>
+  <use href="#hoja" transform="translate(176 138) rotate(-38) scale(-0.8 0.8)" fill="#3F8A57" color="#2F6B45" stroke="#5FA36F"/>
+  <use href="#hoja" transform="translate(220 126) rotate(36) scale(0.8 0.8)" fill="#3F8A57" color="#2F6B45" stroke="#5FA36F"/>
+  <use href="#hoja" transform="translate(162 184) rotate(-62) scale(-0.8 0.8)" fill="#3F8A57" color="#2F6B45" stroke="#5FA36F"/>
+  <use href="#hoja" transform="translate(238 170) rotate(62) scale(0.8 0.8)" fill="#3F8A57" color="#2F6B45" stroke="#5FA36F"/>
+  <use href="#hoja" transform="translate(182 200) rotate(-124) scale(-0.6 0.6)" fill="#5FA36F" color="#3F8A57" stroke="#8FC79A"/>
+  <use href="#hoja" transform="translate(222 184) rotate(126) scale(0.6 0.6)" fill="#5FA36F" color="#3F8A57" stroke="#8FC79A"/>
+  <use href="#hoja" transform="translate(199 160) rotate(14) scale(0.74 0.74)" fill="#5FA36F" color="#3F8A57" stroke="#8FC79A"/>
+  <use href="#hoja" transform="translate(198 188) rotate(-24) scale(-0.72 0.72)" fill="#5FA36F" color="#3F8A57" stroke="#8FC79A"/>
+  <use href="#hoja" transform="translate(200 214) rotate(42) scale(0.58 0.58)" fill="#5FA36F" color="#3F8A57" stroke="#8FC79A"/>
+  <path d="M145 284 L255 284 L241 346 Q240 350 236 350 L164 350 Q160 350 159 346 Z" fill="#C8693F"/>
+  <path d="M224 284 L255 284 L241 346 Q240 350 236 350 L214 350 Z" fill="#A9532E"/>
+  <path d="M154 293 L162 293 L171 342 L164 342 Z" fill="#E08A5F"/>
+  <path d="M145 284 L255 284 L253.6 291 L146.4 291 Z" fill="#A9532E"/>
+  <path d="M224 284 L255 284 L253.6 291 L223 291 Z" fill="#8E4426"/>
+  <rect x="136" y="264" width="128" height="20" rx="5" fill="#C8693F"/>
+  <path d="M232 264 L259 264 Q264 264 264 269 L264 279 Q264 284 259 284 L230 284 Z" fill="#A9532E"/>
+  <rect x="144" y="268" width="9" height="12" rx="2" fill="#E08A5F"/>
+</svg>

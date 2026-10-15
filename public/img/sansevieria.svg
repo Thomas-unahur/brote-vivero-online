@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="ci"><path d="M-3 0 C-8.5 -40 -15 -90 -11.5 -130 C-8.6 -158 -3 -180 0 -191 C3 -180 8.6 -158 11.5 -130 C15 -90 8.5 -40 3 0 Z"/></clipPath>
+    <g id="sA">
+      <path d="M-5 0 C-11 -40 -18 -90 -14 -130 C-11 -160 -4 -185 0 -200 C4 -185 11 -160 14 -130 C18 -90 11 -40 5 0 Z" fill="#F2C14E"/>
+      <path d="M-3 0 C-8.5 -40 -15 -90 -11.5 -130 C-8.6 -158 -3 -180 0 -191 C3 -180 8.6 -158 11.5 -130 C15 -90 8.5 -40 3 0 Z" fill="#1F4D33"/>
+      <path d="M-3 0 C-8.5 -40 -15 -90 -11.5 -130 C-8.6 -158 -3 -180 0 -191 L0 0 Z" fill="#2F6B45"/>
+      <path clip-path="url(#ci)" d="M-20 -18 Q-10 -14 0 -18 T20 -18 L20 -14.5 Q10 -18.5 0 -14.5 T-20 -14.5 Z M-20 -38 Q-10 -42 0 -38 T20 -38 L20 -33.5 Q10 -29.5 0 -33.5 T-20 -33.5 Z M-20 -56 Q-10 -52 0 -56 T20 -56 L20 -50.5 Q10 -54.5 0 -50.5 T-20 -50.5 Z M-20 -77 Q-10 -81 0 -77 T20 -77 L20 -73.5 Q10 -69.5 0 -73.5 T-20 -73.5 Z M-20 -96 Q-10 -92 0 -96 T20 -96 L20 -91.5 Q10 -95.5 0 -91.5 T-20 -91.5 Z M-20 -116 Q-10 -120 0 -116 T20 -116 L20 -110.5 Q10 -106.5 0 -110.5 T-20 -110.5 Z M-20 -135 Q-10 -131 0 -135 T20 -135 L20 -131.5 Q10 -135.5 0 -131.5 T-20 -131.5 Z M-20 -153 Q-10 -157 0 -153 T20 -153 L20 -148.5 Q10 -144.5 0 -148.5 T-20 -148.5 Z M-20 -170 Q-10 -166 0 -170 T20 -170 L20 -164.5 Q10 -168.5 0 -164.5 T-20 -164.5 Z" fill="#8FC79A" opacity=".42"/>
+    </g>
+    <g id="sB">
+      <path d="M-5 0 C-11 -40 -18 -90 -14 -130 C-11 -160 -4 -185 0 -200 C4 -185 11 -160 14 -130 C18 -90 11 -40 5 0 Z" fill="#F2C14E"/>
+      <path d="M-3 0 C-8.5 -40 -15 -90 -11.5 -130 C-8.6 -158 -3 -180 0 -191 C3 -180 8.6 -158 11.5 -130 C15 -90 8.5 -40 3 0 Z" fill="#1F4D33"/>
+      <path d="M-3 0 C-8.5 -40 -15 -90 -11.5 -130 C-8.6 -158 -3 -180 0 -191 L0 0 Z" fill="#2F6B45"/>
+      <path clip-path="url(#ci)" d="M-20 -10 Q-10 -14 0 -10 T20 -10 L20 -5.5 Q10 -1.5 0 -5.5 T-20 -5.5 Z M-20 -29 Q-10 -25 0 -29 T20 -29 L20 -23.5 Q10 -27.5 0 -23.5 T-20 -23.5 Z M-20 -50 Q-10 -54 0 -50 T20 -50 L20 -46.5 Q10 -42.5 0 -46.5 T-20 -46.5 Z M-20 -68 Q-10 -64 0 -68 T20 -68 L20 -63.5 Q10 -67.5 0 -63.5 T-20 -63.5 Z M-20 -88 Q-10 -92 0 -88 T20 -88 L20 -82.5 Q10 -78.5 0 -82.5 T-20 -82.5 Z M-20 -107 Q-10 -103 0 -107 T20 -107 L20 -103.5 Q10 -107.5 0 -103.5 T-20 -103.5 Z M-20 -127 Q-10 -131 0 -127 T20 -127 L20 -122.5 Q10 -118.5 0 -122.5 T-20 -122.5 Z M-20 -146 Q-10 -142 0 -146 T20 -146 L20 -140.5 Q10 -144.5 0 -140.5 T-20 -140.5 Z M-20 -164 Q-10 -168 0 -164 T20 -164 L20 -160.5 Q10 -156.5 0 -160.5 T-20 -160.5 Z" fill="#8FC79A" opacity=".42"/>
+    </g>
+  </defs>
+  <rect width="400" height="400" fill="#F1EEE4"/>
+  <circle cx="200" cy="190" r="150" fill="#E4ECDD"/>
+  <ellipse cx="200" cy="352" rx="120" ry="14" fill="#DCD5C4"/>
+  <!-- boca de la maceta -->
+  <ellipse cx="200" cy="255" rx="66" ry="9" fill="#D6CFBF"/>
+  <ellipse cx="200" cy="256" rx="59" ry="7" fill="#4A3B2F"/>
+  <!-- hojas: atras -->
+  <use href="#sA" transform="translate(196 258) rotate(-4) scale(1.0 0.97)"/>
+  <use href="#sB" transform="translate(214 258) rotate(8) scale(0.95 0.86)"/>
+  <use href="#sB" transform="translate(180 258) rotate(-14) scale(0.95 0.78)"/>
+  <use href="#sA" transform="translate(228 258) rotate(18) scale(0.9 0.7)"/>
+  <use href="#sA" transform="translate(168 258) rotate(-24) scale(0.85 0.6)"/>
+  <use href="#sB" transform="translate(238 258) rotate(28) scale(0.85 0.54)"/>
+  <!-- hojas: adelante -->
+  <use href="#sB" transform="translate(204 258) rotate(2) scale(1.05 0.72)"/>
+  <use href="#sA" transform="translate(188 258) rotate(-8) scale(1.0 0.62)"/>
+  <!-- cuerpo: tronco de cono -->
+  <path d="M138 274 L262 274 L251 345 Q250 350 245 350 L155 350 Q150 350 149 345 Z" fill="#F3EBDA"/>
+  <path d="M232 274 L262 274 L251 345 Q250 350 245 350 L224 350 Z" fill="#E3D8C1"/>
+  <path d="M138 274 L262 274 L261 280 L139 280 Z" fill="#E6DCC7"/>
+  <path d="M232 274 L262 274 L261 280 L231.4 280 Z" fill="#D6CFBF"/>
+  <!-- franja decorativa -->
+  <path d="M142 300 L258 300 L256.9 307 L143.1 307 Z" fill="#D6CFBF"/>
+  <path d="M229.3 300 L258 300 L256.9 307 L228.5 307 Z" fill="#C9C1AE"/>
+  <!-- reflejo -->
+  <path d="M154 286 L159.5 334" fill="none" stroke="#FFFDF7" stroke-width="8" stroke-linecap="round"/>
+  <!-- aro -->
+  <rect x="130" y="256" width="140" height="18" rx="5" fill="#F3EBDA"/>
+  <path d="M238 256 H265 A5 5 0 0 1 270 261 V269 A5 5 0 0 1 265 274 H236 Z" fill="#E6DCC7"/>
+</svg>

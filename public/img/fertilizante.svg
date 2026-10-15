@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="botella">
+      <path d="M147 108 L147 122 C147 136 105 140 105 174 L105 334 Q105 350 121 350 L209 350 Q225 350 225 334 L225 174 C225 140 183 136 183 122 L183 108 Z"/>
+    </clipPath>
+    <clipPath id="vaso">
+      <path d="M238 272 L312 272 L304 340 Q303 350 293 350 L257 350 Q247 350 246 340 Z"/>
+    </clipPath>
+  </defs>
+  <rect width="400" height="400" fill="#F1EEE4"/>
+  <circle cx="200" cy="190" r="150" fill="#E4ECDD"/>
+  <ellipse cx="200" cy="352" rx="120" ry="14" fill="#DCD5C4"/>
+
+  <!-- botella -->
+  <path d="M147 108 L147 122 C147 136 105 140 105 174 L105 334 Q105 350 121 350 L209 350 Q225 350 225 334 L225 174 C225 140 183 136 183 122 L183 108 Z" fill="#D4932F"/>
+  <g clip-path="url(#botella)">
+    <path d="M150 100 L150 124 C150 138 114 146 114 176 L114 360 L130 360 L130 178 C130 154 157 142 157 124 L157 100 Z" fill="#E8B65A"/>
+    <rect x="198" y="100" width="40" height="260" fill="#B0741E"/>
+    <rect x="100" y="338" width="130" height="20" fill="#B0741E"/>
+  </g>
+
+  <!-- etiqueta -->
+  <rect x="111" y="188" width="108" height="132" rx="6" fill="#FAF8F3"/>
+  <path d="M200 188 L213 188 Q219 188 219 194 L219 314 Q219 320 213 320 L200 320 Z" fill="#E9E4D8"/>
+  <rect x="111" y="198" width="108" height="14" fill="#3F8A57"/>
+  <rect x="111" y="214" width="108" height="4" fill="#8FC79A"/>
+  <rect x="111" y="294" width="108" height="4" fill="#8FC79A"/>
+  <rect x="111" y="300" width="108" height="10" fill="#3F8A57"/>
+  <rect x="200" y="198" width="19" height="14" fill="#2F6B45"/>
+  <rect x="200" y="300" width="19" height="10" fill="#2F6B45"/>
+
+  <!-- icono hoja y brote -->
+  <circle cx="165" cy="256" r="30" fill="#E4ECDD"/>
+  <path d="M141 280 Q165 264 189 280 Z" fill="#6B5443"/>
+  <path d="M165 275 L165 248" stroke="#2F6B45" stroke-width="4" stroke-linecap="round"/>
+  <path d="M165 258 C150 260 139 250 137 236 C152 234 163 244 165 258 Z" fill="#5FA36F"/>
+  <path d="M165 258 C163 244 152 234 137 236 L165 258 Z" fill="#8FC79A"/>
+  <path d="M165 250 C166 232 180 222 196 224 C196 240 182 252 165 250 Z" fill="#3F8A57"/>
+  <path d="M165 250 L196 224 C180 222 166 232 165 250 Z" fill="#5FA36F"/>
+
+  <!-- tapa -->
+  <rect x="139" y="102" width="52" height="12" rx="3" fill="#1F4D33"/>
+  <path d="M143 104 L143 76 Q143 66 153 66 L177 66 Q187 66 187 76 L187 104 Z" fill="#2F6B45"/>
+  <path d="M143 104 L143 76 Q143 66 153 66 L160 66 L160 104 Z" fill="#3F8A57"/>
+  <path d="M176 66 L177 66 Q187 66 187 76 L187 104 L176 104 Z" fill="#1F4D33"/>
+  <g stroke="#1F4D33" stroke-width="2">
+    <path d="M152 74 L152 98"/>
+    <path d="M160 74 L160 98"/>
+    <path d="M168 74 L168 98"/>
+  </g>
+  <path d="M142 102 L159 102 L159 114 L142 114 Q139 114 139 111 L139 105 Q139 102 142 102 Z" fill="#2F6B45"/>
+
+  <!-- vasito medidor -->
+  <path d="M238 272 L312 272 L304 340 Q303 350 293 350 L257 350 Q247 350 246 340 Z" fill="#F7F4EE"/>
+  <g clip-path="url(#vaso)">
+    <rect x="234" y="310" width="82" height="48" fill="#E0A92E"/>
+    <ellipse cx="275" cy="310" rx="35" ry="5" fill="#F2C14E"/>
+    <rect x="292" y="266" width="24" height="94" fill="#D6CFBF" opacity="0.45"/>
+    <rect x="248" y="266" width="8" height="94" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+  <g stroke="#9AA5A0" stroke-width="2" stroke-linecap="round">
+    <path d="M284 286 L297 286"/>
+    <path d="M289 295 L297 295"/>
+    <path d="M284 304 L297 304"/>
+    <path d="M289 313 L297 313"/>
+    <path d="M284 322 L297 322"/>
+    <path d="M289 331 L297 331"/>
+  </g>
+  <path d="M241 271 L229 264 L246 267 Z" fill="#D6CFBF"/>
+  <ellipse cx="275" cy="272" rx="37" ry="6" fill="#D6CFBF"/>
+  <ellipse cx="275" cy="272.6" rx="34.5" ry="4.5" fill="#ECE8DF"/>
+</svg>

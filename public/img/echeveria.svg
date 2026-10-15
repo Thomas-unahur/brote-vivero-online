@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="punta" gradientUnits="userSpaceOnUse" x1="0" y1="-76" x2="0" y2="-100">
+      <stop offset="0" stop-color="#F28CA0" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#F28CA0" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#E2526B"/>
+    </linearGradient>
+    <g id="hR">
+      <path d="M0 0C-10-6-24-34-24-62C-24-80-15-90-5-95L0-100L5-95C15-90 24-80 24-62C24-34 10-6 0 0Z"/>
+      <path d="M0 0C10-6 24-34 24-62C24-80 15-90 5-95L0-100Z" fill="#1F4D33" fill-opacity="0.17"/>
+      <path d="M-5-10C-14-28-18-52-16-76C-11-58-8-32-2-10Z" fill="#FFFFFF" fill-opacity="0.28"/>
+      <path d="M0 0C-10-6-24-34-24-62C-24-80-15-90-5-95L0-100L5-95C15-90 24-80 24-62C24-34 10-6 0 0Z" fill="url(#punta)"/>
+    </g>
+    <g id="hL">
+      <path d="M0 0C-10-6-24-34-24-62C-24-80-15-90-5-95L0-100L5-95C15-90 24-80 24-62C24-34 10-6 0 0Z"/>
+      <path d="M0 0C-10-6-24-34-24-62C-24-80-15-90-5-95L0-100Z" fill="#1F4D33" fill-opacity="0.17"/>
+      <path d="M5-10C14-28 18-52 16-76C11-58 8-32 2-10Z" fill="#FFFFFF" fill-opacity="0.28"/>
+      <path d="M0 0C-10-6-24-34-24-62C-24-80-15-90-5-95L0-100L5-95C15-90 24-80 24-62C24-34 10-6 0 0Z" fill="url(#punta)"/>
+    </g>
+    <clipPath id="aro"><path d="M106 270L106 283C106 290 148 296 200 296C252 296 294 290 294 283L294 270A94 13 0 0 1 106 270Z"/></clipPath>
+    <clipPath id="cuerpo"><path d="M112 288L127 339Q130 350 142 350L258 350Q270 350 273 339L288 288Z"/></clipPath>
+  </defs>
+
+  <rect width="400" height="400" fill="#F1EEE4"/>
+  <circle cx="200" cy="190" r="150" fill="#E4ECDD"/>
+  <ellipse cx="200" cy="352" rx="120" ry="14" fill="#DCD5C4"/>
+
+  <!-- maceta de ceramica blanca baja -->
+  <ellipse cx="200" cy="270" rx="94" ry="13" fill="#FFFFFF"/>
+  <ellipse cx="200" cy="271" rx="85" ry="10.5" fill="#D6CFBF"/>
+  <ellipse cx="200" cy="273" rx="79" ry="8" fill="#4A3B2F"/>
+  <g clip-path="url(#cuerpo)">
+    <rect x="100" y="282" width="200" height="75" fill="#FAF8F3"/>
+    <path d="M234 282L300 282L300 357L226 357Z" fill="#E9E4D8"/>
+    <path d="M262 282L300 282L300 357L252 357Z" fill="#D6CFBF"/>
+    <path d="M100 282L132 282L144 357L100 357Z" fill="#FFFFFF"/>
+    <rect x="100" y="282" width="200" height="20" fill="#D6CFBF" fill-opacity="0.6"/>
+  </g>
+  <g clip-path="url(#aro)">
+    <rect x="100" y="255" width="200" height="45" fill="#FAF8F3"/>
+    <path d="M244 255L300 255L300 300L240 300Z" fill="#E9E4D8"/>
+    <path d="M100 255L124 255L124 300L100 300Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- roseta -->
+  <ellipse cx="200" cy="218" rx="34" ry="18" fill="#6E9F92"/>
+    <use href="#hR" fill="#7EB4A6" transform="translate(200.0 209.5) rotate(0.0) scale(1.501 0.825)"/>
+  <use href="#hR" fill="#7EB4A6" transform="translate(212.5 211.2) rotate(42.0) scale(1.353 0.991)"/>
+  <use href="#hR" fill="#7EB4A6" transform="translate(187.5 211.2) rotate(-42.0) scale(1.353 0.991)"/>
+  <use href="#hR" fill="#7EB4A6" transform="translate(221.7 215.8) rotate(66.8) scale(0.993 1.251)"/>
+  <use href="#hL" fill="#7EB4A6" transform="translate(178.3 215.8) rotate(-66.8) scale(0.993 1.251)"/>
+  <use href="#hR" fill="#7EB4A6" transform="translate(225.0 222.0) rotate(83.1) scale(0.825 1.337)"/>
+  <use href="#hL" fill="#7EB4A6" transform="translate(175.0 222.0) rotate(-83.1) scale(0.825 1.337)"/>
+  <use href="#hR" fill="#7EB4A6" transform="translate(221.7 228.2) rotate(98.4) scale(0.993 1.162)"/>
+  <use href="#hL" fill="#7EB4A6" transform="translate(178.3 228.2) rotate(-98.4) scale(0.993 1.162)"/>
+  <use href="#hL" fill="#7EB4A6" transform="translate(187.5 232.8) rotate(-121.9) scale(1.353 0.782)"/>
+  <use href="#hR" fill="#7EB4A6" transform="translate(212.5 232.8) rotate(121.9) scale(1.353 0.782)"/>
+  <use href="#hL" fill="#7EB4A6" transform="translate(200.0 234.5) rotate(180.0) scale(1.501 0.502)"/>
+  <use href="#hR" fill="#8CC0B2" transform="translate(204.4 213.8) rotate(16.6) scale(1.176 0.960)"/>
+  <use href="#hR" fill="#8CC0B2" transform="translate(195.6 213.8) rotate(-16.6) scale(1.176 0.960)"/>
+  <use href="#hR" fill="#8CC0B2" transform="translate(212.0 216.0) rotate(43.7) scale(0.954 1.084)"/>
+  <use href="#hR" fill="#8CC0B2" transform="translate(188.0 216.0) rotate(-43.7) scale(0.954 1.084)"/>
+  <use href="#hR" fill="#8CC0B2" transform="translate(216.4 219.8) rotate(61.9) scale(0.664 1.160)"/>
+  <use href="#hL" fill="#8CC0B2" transform="translate(183.6 219.8) rotate(-61.9) scale(0.664 1.160)"/>
+  <use href="#hL" fill="#8CC0B2" transform="translate(183.6 224.2) rotate(-75.1) scale(0.664 1.059)"/>
+  <use href="#hR" fill="#8CC0B2" transform="translate(216.4 224.2) rotate(75.1) scale(0.664 1.059)"/>
+  <use href="#hR" fill="#8CC0B2" transform="translate(212.0 228.0) rotate(87.4) scale(0.954 0.750)"/>
+  <use href="#hL" fill="#8CC0B2" transform="translate(188.0 228.0) rotate(-87.4) scale(0.954 0.750)"/>
+  <use href="#hR" fill="#8CC0B2" transform="translate(204.4 230.2) rotate(110.6) scale(1.176 0.293)"/>
+  <use href="#hL" fill="#8CC0B2" transform="translate(195.6 230.2) rotate(-110.6) scale(1.176 0.293)"/>
+  <use href="#hR" fill="#9BCABD" transform="translate(196.2 217.4) rotate(-17.1) scale(0.842 0.888)"/>
+  <use href="#hR" fill="#9BCABD" transform="translate(203.8 217.4) rotate(17.1) scale(0.842 0.888)"/>
+  <use href="#hR" fill="#9BCABD" transform="translate(190.8 220.1) rotate(-43.6) scale(0.535 0.916)"/>
+  <use href="#hR" fill="#9BCABD" transform="translate(209.2 220.1) rotate(43.6) scale(0.535 0.916)"/>
+  <use href="#hL" fill="#9BCABD" transform="translate(190.8 223.9) rotate(-57.5) scale(0.535 0.749)"/>
+  <use href="#hR" fill="#9BCABD" transform="translate(209.2 223.9) rotate(57.5) scale(0.535 0.749)"/>
+  <use href="#hR" fill="#9BCABD" transform="translate(203.8 226.6) rotate(50.3) scale(0.842 0.340)"/>
+  <use href="#hL" fill="#9BCABD" transform="translate(196.2 226.6) rotate(-50.3) scale(0.842 0.340)"/>
+  <use href="#hR" fill="#ABD4C8" transform="translate(200.0 219.5) rotate(0.0) scale(0.557 0.640)"/>
+  <use href="#hR" fill="#ABD4C8" transform="translate(204.3 220.8) rotate(27.9) scale(0.368 0.628)"/>
+  <use href="#hR" fill="#ABD4C8" transform="translate(195.7 220.8) rotate(-27.9) scale(0.368 0.628)"/>
+  <use href="#hR" fill="#ABD4C8" transform="translate(204.3 223.2) rotate(37.3) scale(0.368 0.484)"/>
+  <use href="#hR" fill="#ABD4C8" transform="translate(195.7 223.2) rotate(-37.3) scale(0.368 0.484)"/>
+  <use href="#hR" fill="#ABD4C8" transform="translate(200.0 224.5) rotate(0.0) scale(0.557 0.300)"/>
+  <use href="#hR" fill="#BEDFD4" transform="translate(201.2 221.2) rotate(11.9) scale(0.269 0.389)"/>
+  <use href="#hR" fill="#BEDFD4" transform="translate(198.8 221.2) rotate(-11.9) scale(0.269 0.389)"/>
+  <use href="#hR" fill="#BEDFD4" transform="translate(201.9 222.3) rotate(23.1) scale(0.177 0.331)"/>
+  <use href="#hR" fill="#BEDFD4" transform="translate(198.1 222.3) rotate(-23.1) scale(0.177 0.331)"/>
+  <use href="#hR" fill="#BEDFD4" transform="translate(200.0 223.0) rotate(0.0) scale(0.312 0.257)"/>
+  <path d="M200 196C206 204 206 216 200 220C194 216 194 204 200 196Z" fill="#C9E5DA"/>
+</svg>

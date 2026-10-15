@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <!-- hoja "mf" partida en dos mitades (con un agujerito en cada una) -->
+    <path id="ml" fill-rule="evenodd" d="M0 -104C-14 -98 -28 -84 -34 -70L-12 -74L-39 -63C-42 -59 -44 -54 -46 -47L-14 -52L-48 -40C-49 -34 -48 -28 -44 -21L-14 -28L-40 -14C-30 0 -8 -2 0 -12Z M-17.4 -62A6 3 -20 1 0 -28.6 -58A6 3 -20 1 0 -17.4 -62Z"/>
+    <path id="mr" fill-rule="evenodd" d="M0 -104C14 -98 28 -84 34 -70L12 -74L39 -63C42 -59 44 -54 46 -47L14 -52L48 -40C49 -34 48 -28 44 -21L14 -28L40 -14C30 0 8 -2 0 -12Z M18.4 -39.4A7 3.5 20 1 0 31.6 -34.6A7 3.5 20 1 0 18.4 -39.4Z"/>
+    <!-- el origen queda en la escotadura de la base, donde entra el tallo -->
+    <g id="hoja" transform="translate(0 12)">
+      <use href="#ml"/>
+      <use href="#mr" fill="currentColor"/>
+      <path d="M0 -12V-98" fill="none" stroke="#5FA36F" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect width="400" height="400" fill="#F1EEE4"/>
+  <circle cx="200" cy="190" r="150" fill="#E4ECDD"/>
+  <ellipse cx="200" cy="352" rx="120" ry="14" fill="#DCD5C4"/>
+
+  <!-- boca de la maceta -->
+  <ellipse cx="200" cy="254" rx="72" ry="8" fill="#D6CFBF"/>
+  <ellipse cx="200" cy="256" rx="64" ry="5.5" fill="#4A3B2F"/>
+
+  <!-- tallos -->
+  <g fill="none" stroke-width="5" stroke-linecap="round">
+    <path d="M195 258Q183 200 156.5 154.4" stroke="#2F6B45"/>
+    <path d="M205 258Q216 198 240.4 151.1" stroke="#2F6B45"/>
+    <path d="M191 258Q166 233 137 219.5" stroke="#3F8A57"/>
+    <path d="M209 258Q236 231 261.5 217.3" stroke="#3F8A57"/>
+  </g>
+
+  <!-- hojas de atras -->
+  <use href="#hoja" transform="translate(156.5 154.4) rotate(-22) scale(1.12)" fill="#2A6241" color="#1F4D33"/>
+  <use href="#hoja" transform="translate(240.4 151.1) rotate(20) scale(1.1)" fill="#2A6241" color="#1F4D33"/>
+  <!-- hojas de adelante -->
+  <use href="#hoja" transform="translate(137 219.5) rotate(-56) scale(1.04)" fill="#3F8A57" color="#347A4B"/>
+  <use href="#hoja" transform="translate(261.5 217.3) rotate(54) scale(1.02)" fill="#3F8A57" color="#347A4B"/>
+
+  <!-- maceta de ceramica -->
+  <path d="M134 272 L266 272 L253 346 Q252 350 248 350 L152 350 Q148 350 147 346 Z" fill="#FAF8F3"/>
+  <path d="M230 272 L266 272 L253 346 Q252 350 248 350 L222 350 Z" fill="#E9E4D8"/>
+  <path d="M134 272 L266 272 L265 280 L135 280 Z" fill="#E9E4D8"/>
+  <path d="M230 272 L266 272 L265 280 L229 280 Z" fill="#D6CFBF"/>
+  <path d="M154 284 L162 284 L156 340 L150 340 Z" fill="#FFFFFF"/>
+  <rect x="126" y="254" width="148" height="20" rx="6" fill="#FAF8F3"/>
+  <path d="M238 254 L268 254 Q274 254 274 260 L274 268 Q274 274 268 274 L236 274 Z" fill="#E9E4D8"/>
+</svg>
