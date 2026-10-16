@@ -1,18 +1,25 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Inicio from "./pages/Inicio";
+import Catalogo from "./pages/Catalogo";
+import DetalleProducto from "./pages/DetalleProducto";
+import Carrito from "./pages/Carrito";
+import Formulario from "./pages/Formulario";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       {/* El Miembro 1 renderizará aquí el <Navbar /> */}
       <Routes>
-        <Route path="/" element={<div>Página de Inicio</div>} />
-        <Route path="/productos" element={<div>Catálogo</div>} />
-        <Route path="/producto/:id" element={<div>Detalle de Producto</div>} />
-        <Route path="/carrito" element={<div>Carrito</div>} />
-        <Route path="/contacto" element={<div>Finalizar Compra</div>} />
+        <Route path="/" element={<Inicio/>} />
+        <Route path="/productos" element={<Catalogo/>} />
+        <Route path="/producto/:id" element={<DetalleProducto/>} />
+        <Route path="/carrito" element={<Carrito/>} />
+        <Route path="/formulario" element={<Formulario/>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
       {/* El Miembro 1 renderizará aquí el <Footer /> */}
-    </BrowserRouter>
+    </>
   );
 }
 
