@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import DetalleProducto from '/src/pages/DetalleProducto';
 function App() {
   return (
     <BrowserRouter>
@@ -7,7 +7,7 @@ function App() {
       <Routes>
         <Route path="/" element={<div>Página de Inicio</div>} />
         <Route path="/productos" element={<div>Catálogo</div>} />
-        <Route path="/producto/:id" element={<div>Detalle de Producto</div>} />
+        <Route path="/producto/:id" element={<DetalleProducto />} />
         <Route path="/carrito" element={<div>Carrito</div>} />
         <Route path="/contacto" element={<div>Finalizar Compra</div>} />
       </Routes>

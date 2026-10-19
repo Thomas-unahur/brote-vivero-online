@@ -48,10 +48,10 @@ img {
 /* 3. Utilidades rápidas de texto y fondos para usar en cualquier componente */
 .texto-suave { color: var(--texto-suave); }
 .texto-verde { color: var(--verde-medio); font-weight: 700; }
+.texto-verde-oscuro { color: var(--verde-oscuro); font-weight: 700; }
 .bg-terracota { background-color: var(--terracota-oscuro); color: #ffffff; }
 .bg-verde { background-color: var(--verde); color: #ffffff; }
 .bg-amarillo { background-color: var(--amarillo); color: #3d2f05; }
-
 /* 4. Adaptación de Botones de Bootstrap a la marca
    Si usan <button className="btn btn-verde"> tomará estos colores */
 .btn {
