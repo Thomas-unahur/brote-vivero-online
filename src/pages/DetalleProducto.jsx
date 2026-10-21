@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { Container, Row, Col, Image, Badge, Button } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import productos from '/src/data/productos.js';
 
 const DetalleProducto = () => {
