@@ -47,6 +47,7 @@ img {
 
 /* 3. Utilidades rápidas de texto y fondos para usar en cualquier componente */
 .texto-suave { color: var(--texto-suave); }
+.texto-terracota {color : var(--terracota)}
 .texto-verde { color: var(--verde-medio); font-weight: 700; }
 .texto-verde-oscuro { color: var(--verde-oscuro); font-weight: 700; }
 .bg-terracota { background-color: var(--terracota-oscuro); color: #ffffff; }
