@@ -5,11 +5,13 @@ import DetalleProducto from "./pages/DetalleProducto";
 import Carrito from "./pages/Carrito";
 import Formulario from "./pages/Formulario";
 import NotFound from "./pages/NotFound";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      {/* El Miembro 1 renderizará aquí el <Navbar /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Inicio/>} />
         <Route path="/productos" element={<Catalogo/>} />
@@ -18,7 +20,7 @@ function App() {
         <Route path="/formulario" element={<Formulario/>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
-      {/* El Miembro 1 renderizará aquí el <Footer /> */}
+      <Footer />
     </>
   );
 }
