@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Carrito from "./pages/Carrito.jsx";
+import Inicio from "./pages/Inicio";
+import Catalogo from "./pages/Catalogo";
+import DetalleProducto from "./pages/DetalleProducto";
+import Carrito from "./pages/Carrito";
+import Formulario from "./pages/Formulario";
+import NotFound from "./pages/NotFound";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import productos from "./data/productos.js";
 
 function leerCarritoGuardado() {
@@ -44,15 +51,15 @@ function App() {
   const [carrito, setCarrito] = useState(leerCarritoGuardado);
 
   useEffect(() => {
-    localStorage.setItem("carritoBrote", JSON.stringify(carrito)); // Guardar el carrito en localStorage cada vez que cambie
+    localStorage.setItem("carritoBrote", JSON.stringify(carrito)); 
   }, [carrito]);
 
-  function agregarAlCarrito(producto) { // agrega un producto al carrito
+  function agregarAlCarrito(producto) { 
     if (producto.stock <= 0) {
       return;
     }
 
-    setCarrito((carritoAnterior) => { // actualizo el estado del carrito anterior
+    setCarrito((carritoAnterior) => { 
       const productoEnCarrito = carritoAnterior.find((item) => item.id === producto.id);
       if (productoEnCarrito) {
         if (productoEnCarrito.cantidad >= producto.stock) {
@@ -80,7 +87,7 @@ function App() {
 
   function aumentarCantidad(id) {
     setCarrito((carritoAnterior) =>
-      carritoAnterior.map((item) => // si el id del item coincide con el id pasado como parámetro y la cantidad del item es menor al stock disponible, aumentamos la cantidad en 1
+      carritoAnterior.map((item) => 
         item.id === id && item.cantidad < item.stock
           ? { ...item, cantidad: item.cantidad + 1 }
           : item
@@ -90,7 +97,7 @@ function App() {
 
   function disminuirCantidad(id) {
     setCarrito((carritoAnterior) =>
-      carritoAnterior.map((item) => // si el id del item coincide con el id pasado como parámetro y la cantidad del item es mayor a 1, disminuimos la cantidad en 1
+      carritoAnterior.map((item) => 
         item.id === id && item.cantidad > 1
           ? { ...item, cantidad: item.cantidad - 1 }
           : item
@@ -98,11 +105,11 @@ function App() {
     );
   }
 
-  function eliminarDelCarrito(id) { // eliminamos un item del carrito filtrando el carrito anterior y devolviendo un nuevo array (sin el item cuyo id coincide con el id pasado como parámetro)
+  function eliminarDelCarrito(id) { 
     setCarrito((carritoAnterior) => carritoAnterior.filter((item) => item.id !== id));
   }
 
-  function vaciarCarrito() { // vaciamos el carrito estableciendo el estado del carrito a un array vacío
+  function vaciarCarrito() { 
     setCarrito([]);
   }
 
@@ -111,15 +118,17 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
+      <Header />
       <Routes>
-        <Route path="/" element={<div>Página de Inicio</div>} />
-        <Route path="/productos" element={<div>Catálogo</div>} />
-        <Route path="/producto/:id" element={<div>Detalle de Producto</div>} />
-        <Route
-          path="/carrito"
+        <Route path="/" element={<Inicio />} />
+        <Route path="/productos" element={<Catalogo />} />
+        <Route path="/producto/:id" element={<DetalleProducto />} />
+        
+        {/* Aquí integramos la ruta con las props del carrito que armó Santiago */}
+        <Route 
+          path="/carrito" 
           element={
-            <Carrito
+            <Carrito 
               carrito={carrito}
               cantidadTotal={cantidadTotal}
               total={total}
@@ -129,11 +138,13 @@ function App() {
               eliminarDelCarrito={eliminarDelCarrito}
               vaciarCarrito={vaciarCarrito}
             />
-          }
+          } 
         />
-        <Route path="/contacto" element={<div>Finalizar Compra</div>} />
+        
+        <Route path="/formulario" element={<Formulario />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      {/*FOOTER*/}
+      <Footer />
     </BrowserRouter>
   );
 }
