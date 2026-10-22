@@ -90,7 +90,7 @@ const FormularioCompra = ({ carrito = [], total = 0 , vaciarCarrito, onCompraExi
                         carrito.map((item, index) => (
                             <ListGroup.Item key={index} className="d-flex justify-content-between align-items-center">
                                 <span>{item.nombre} <Badge bg="secondary" className="ms-2">x{item.cantidad}</Badge></span>
-                                <span>${formatearPrecio(item.precio * item.cantidad)}</span>
+                                <span>{formatearPrecio(item.precio * item.cantidad)}</span>
                             </ListGroup.Item>
                         ))
                     ) : (
