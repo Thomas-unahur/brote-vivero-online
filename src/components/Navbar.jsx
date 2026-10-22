@@ -48,6 +48,15 @@ function AppNavbar({cantidadTotal}) {
             >
               Finalizar compra
             </Nav.Link>
+            <Nav.Link
+              as={NavLink}
+              to="/contacto"
+              className={({ isActive }) =>
+                `${styles.link} ${isActive ? styles.activeLink : ""}`
+              }
+            >
+              Contacto
+            </Nav.Link>
 
             <Nav.Link
               as={Link}

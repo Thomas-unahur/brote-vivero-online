@@ -7,6 +7,7 @@ import DetalleProducto from "./pages/DetalleProducto";
 import Carrito from "./pages/Carrito";
 import FinalizarCompra from "./pages/FinalizarCompra";
 import NotFound from "./pages/NotFound";
+import Contacto from "./pages/Contacto";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import productos from "./data/productos.js";
@@ -151,7 +152,7 @@ function App() {
           } 
         />
         
-        <Route path="/contacto" element={<NotFound />} />
+        <Route path="/contacto" element={<Contacto />} />
         <Route path="/formulario" element={<FinalizarCompra carrito={carrito} total={total} vaciarCarrito={vaciarCarrito}/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
