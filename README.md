@@ -148,5 +148,4 @@ npm run preview
 
 ## Deploy
 
-No se realizó un deploy público para esta versión. El proyecto puede ejecutarse
-localmente con `npm run dev`.
+El deploy de la pagina web esta alojado en la plataforma "Netlify": https://brote-vivero-online.netlify.app/
