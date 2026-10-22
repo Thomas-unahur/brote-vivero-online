@@ -105,7 +105,7 @@ function Inicio() {
               <Button 
                 variant="outline-success" 
                 className={styles.btnConoce}
-                onClick={() => navigate('/ubicacion')}
+                onClick={() => navigate('/contacto')}
               >
                 Conocé el vivero
               </Button>
