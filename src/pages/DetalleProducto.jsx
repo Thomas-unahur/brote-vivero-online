@@ -2,10 +2,9 @@ import { useParams, Link } from 'react-router-dom';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import productos from '/src/data/productos.js';
 
-const DetalleProducto = () => {
+const DetalleProducto = (props) => {
     const { id } = useParams();
     const producto = productos.find(producto => producto.id == id);
-
     if (!producto) {
         return (
             <Container className="mt-4">
@@ -16,7 +15,7 @@ const DetalleProducto = () => {
 
     return (
         <Container className="mt-4">
-            <Row>
+            <Row className='mb-4'>
                 <Col xs={12} md={5} className="mb-4 mb-md-0">
                     <Image 
                         src={producto.imagen} 
@@ -59,7 +58,10 @@ const DetalleProducto = () => {
                     </ul>
                     
                     <div className="d-flex gap-2">
-                        <Button className="btn-verde">Agregar al carrito</Button>
+                        <Button className="btn-verde" 
+                        disabled={producto.stock < 1}
+                        onClick={() => props.agregarAlCarrito(producto)}
+                        >Agregar al carrito</Button>
                         
                         <Link to="/productos" className="btn btn-outline-verde">
                          Volver al catálogo

@@ -1,0 +1,162 @@
+.tarjeta {
+  height: 100%;
+  border: 1px solid var(--borde);
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(31, 77, 51, 0.12);
+}
+
+/* En el celular la imagen es un poco más baja para no hacer tan larga la lista */
+.contenedorImagen {
+  position: relative;
+  display: block;
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+  background-color: var(--fondo-imagen);
+}
+
+@media (min-width: 576px) {
+  .contenedorImagen {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover .imagen {
+  transform: scale(1.04);
+}
+
+/* Los productos sin stock se ven en gris */
+.imagenSinStock {
+  filter: grayscale(0.85);
+  opacity: 0.7;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.78rem;
+  padding: 0.45em 0.85em;
+}
+
+.sinStock {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #3d443f;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem 1.1rem 1.25rem;
+}
+
+.categoria {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--verde-medio);
+}
+
+.nombre {
+  font-size: 1.2rem;
+  margin: 0.3rem 0 0.4rem;
+}
+
+.nombre a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.nombre a:hover {
+  color: var(--verde);
+}
+
+.descripcion {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+}
+
+/* margin-top: auto empuja el precio y los botones al final de la card */
+.pie {
+  margin-top: auto;
+}
+
+.precios {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.precio {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--verde-oscuro);
+  white-space: nowrap;
+}
+
+.precioAnterior {
+  text-decoration: line-through;
+  color: var(--texto-suave);
+  white-space: nowrap;
+}
+
+.stock,
+.stockPocos,
+.stockAgotado {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0.2rem 0 0.9rem;
+}
+
+.stock {
+  color: var(--verde);
+}
+
+.stockPocos {
+  color: var(--terracota-oscuro);
+}
+
+.stockAgotado {
+  color: var(--texto-suave);
+}
+
+.botones {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* Bootstrap baja la opacidad de los botones deshabilitados; la dejamos en 1
+   para que el texto "Sin stock" se lea bien */
+.botones button:disabled {
+  opacity: 1;
+}
+
+/* :focus-visible es cuando el botón se elige con el teclado (Tab): le ponemos un borde
+   oscuro para que se vea cuál está seleccionado */
+.botones a:focus-visible,
+.botones button:focus-visible {
+  outline: 3px solid var(--verde-oscuro);
+  outline-offset: 2px;
+}

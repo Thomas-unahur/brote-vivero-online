@@ -1,0 +1,139 @@
+/* ---------- Encabezado de la página ---------- */
+.encabezado {
+  margin-bottom: 1.8rem;
+}
+
+.sobretitulo {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--terracota-oscuro);
+  margin-bottom: 0.4rem;
+}
+
+.encabezado h1 {
+  font-size: 2.2rem;
+  color: var(--verde-oscuro);
+}
+
+.encabezado p {
+  color: var(--texto-suave);
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .encabezado h1 {
+    font-size: 2.8rem;
+  }
+}
+
+/* ---------- Panel de filtros ---------- */
+.panelFiltros {
+  padding: 1.2rem;
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: 20px;
+}
+
+.panelFiltros label {
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+/* Borde más oscuro que el de Bootstrap para que los campos se distingan bien del fondo */
+.panelFiltros input,
+.panelFiltros select {
+  border-color: #8f877a;
+}
+
+/* Borde verde (en vez del azul de Bootstrap) cuando el campo está seleccionado */
+.panelFiltros input:focus,
+.panelFiltros select:focus {
+  border-color: var(--salvia);
+  box-shadow: 0 0 0 0.25rem rgba(47, 107, 69, 0.18);
+}
+
+.panelFiltros input[type="checkbox"]:checked {
+  background-color: var(--verde);
+  border-color: var(--verde);
+}
+
+.switchStock {
+  padding-bottom: 0.45rem;
+}
+
+/* En el celular los botones de categorías se deslizan de costado */
+.categorias {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+  overflow-x: auto;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.categorias button {
+  flex-shrink: 0;
+}
+
+/* :focus-visible es cuando el botón se elige con el teclado (Tab): le ponemos un borde
+   oscuro para que se vea cuál está seleccionado */
+.categorias button:focus-visible {
+  outline: 3px solid var(--verde-oscuro);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .categorias {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+}
+
+/* ---------- Resultados ---------- */
+.barraResultados {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 1.2rem 0;
+  color: var(--texto-suave);
+}
+
+/* Bootstrap arma los colores del botón con variables (--bs-btn-...).
+   Las cambiamos para que no se ponga azul al pasar el mouse o al hacer clic */
+.linkLimpiar {
+  --bs-btn-color: var(--terracota-oscuro);
+  --bs-btn-hover-color: var(--verde-oscuro);
+  --bs-btn-active-color: var(--verde-oscuro);
+  --bs-btn-focus-shadow-rgb: 169, 83, 46;
+  padding: 0;
+  font-weight: 700;
+}
+
+.sinResultados {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: 24px;
+}
+
+.sinResultados img {
+  margin-bottom: 1rem;
+}
+
+.sinResultados h3 {
+  font-size: 1.8rem;
+  color: var(--verde-oscuro);
+}
+
+.sinResultados p {
+  color: var(--texto-suave);
+}

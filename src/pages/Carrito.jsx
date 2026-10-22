@@ -18,7 +18,7 @@ function Carrito(props) { // representa la página del carrito de compras
       <main className="container py-5 text-center">
         <h1>Tu carrito está vacío</h1>
         <p>Todavía no agregaste productos.</p>
-        <Link to="/productos" className="btn btn-success"> // botón para ir a la página de productos
+        <Link to="/productos" className="btn btn-success">
           Ver productos
         </Link>
       </main>
@@ -68,7 +68,7 @@ function Carrito(props) { // representa la página del carrito de compras
               <span>Total</span>
               <strong>{formatearPrecio(props.total)}</strong>
             </div>
-            <Link to="/contacto" className="btn btn-success w-100 mt-3">
+            <Link to="/formulario" className="btn btn-success w-100 mt-3">
               Finalizar compra
             </Link>
           </div>

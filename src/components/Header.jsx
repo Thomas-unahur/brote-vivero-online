@@ -1,9 +1,9 @@
 import Navbar from "./Navbar";
 
-function Header() {
+function Header({cantidadTotal}) {
   return (
     <header>
-      <Navbar />
+      <Navbar cantidadTotal={cantidadTotal}/>
     </header>
   );
 }

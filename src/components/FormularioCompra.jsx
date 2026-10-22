@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { formatearPrecio } from "../utils/formato.js";
 import { Form, Button, Alert, ListGroup, Badge } from "react-bootstrap";
 
-const FormularioCompra = ({ carrito = [], total = 0 }) => {
+const FormularioCompra = ({ carrito = [], total = 0 , vaciarCarrito, onCompraExitosa}) => {
 
     const [paso, setPaso] = useState(1);
     const [formData, setFormData] = useState({
@@ -43,6 +44,8 @@ const FormularioCompra = ({ carrito = [], total = 0 }) => {
     };
 
     const confirmarCompraDefinitiva = () => {
+        onCompraExitosa();
+        vaciarCarrito();
         setPaso(3); 
     };
 
@@ -87,7 +90,7 @@ const FormularioCompra = ({ carrito = [], total = 0 }) => {
                         carrito.map((item, index) => (
                             <ListGroup.Item key={index} className="d-flex justify-content-between align-items-center">
                                 <span>{item.nombre} <Badge bg="secondary" className="ms-2">x{item.cantidad}</Badge></span>
-                                <span>${item.precio * item.cantidad}</span>
+                                <span>${formatearPrecio(item.precio * item.cantidad)}</span>
                             </ListGroup.Item>
                         ))
                     ) : (
@@ -95,7 +98,7 @@ const FormularioCompra = ({ carrito = [], total = 0 }) => {
                     )}
                     <ListGroup.Item variant="success" className="d-flex justify-content-between fw-bold fs-5">
                         <span>Total a Pagar:</span>
-                        <span>${total}</span>
+                        <span>{formatearPrecio(total)}</span>
                     </ListGroup.Item>
                 </ListGroup>
 

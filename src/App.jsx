@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
 import Catalogo from "./pages/Catalogo";
+import Productos from "./pages/Productos.jsx";
 import DetalleProducto from "./pages/DetalleProducto";
 import Carrito from "./pages/Carrito";
 import FinalizarCompra from "./pages/FinalizarCompra";
@@ -9,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import productos from "./data/productos.js";
+import { Toast, ToastContainer } from "react-bootstrap";
+
 
 function leerCarritoGuardado() {
   const carritoGuardado = localStorage.getItem("carritoBrote");
@@ -49,7 +52,7 @@ function leerCarritoGuardado() {
 
 function App() {
   const [carrito, setCarrito] = useState(leerCarritoGuardado);
-
+  const [notificacion, setNotificacion] = useState(null);
   useEffect(() => {
     localStorage.setItem("carritoBrote", JSON.stringify(carrito)); 
   }, [carrito]);
@@ -59,12 +62,17 @@ function App() {
       return;
     }
 
+    const productoExistente = carrito.find((item) => item.id === producto.id);
+    if (productoExistente && productoExistente.cantidad >= producto.stock) {
+      return;  //No se muestra el toast si agrego el producto pero ya no tengo stock
+    }
+
     setCarrito((carritoAnterior) => { 
       const productoEnCarrito = carritoAnterior.find((item) => item.id === producto.id);
       if (productoEnCarrito) {
         if (productoEnCarrito.cantidad >= producto.stock) {
           return carritoAnterior;
-        }
+        }    
 
         return carritoAnterior.map((item) =>
           item.id === producto.id ? { ...item, cantidad: item.cantidad + 1 } : item
@@ -83,6 +91,8 @@ function App() {
         },
       ];
     });
+
+    setNotificacion(`¡"${producto.nombre}" se agregó al carrito!`);
   }
 
   function aumentarCantidad(id) {
@@ -118,11 +128,12 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header />
+      <Header  cantidadTotal={cantidadTotal}/>
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/productos" element={<Catalogo />} />
-        <Route path="/producto/:id" element={<DetalleProducto />} />
+        <Route path="/catalogo" element={<Catalogo />} />
+        <Route path="/productos" element={<Productos agregarAlCarrito={agregarAlCarrito}/>} />
+        <Route path="/producto/:id" element={<DetalleProducto agregarAlCarrito={agregarAlCarrito}/>} />
         
         <Route 
           path="/carrito" 
@@ -141,10 +152,30 @@ function App() {
         />
         
         <Route path="/contacto" element={<NotFound />} />
-        <Route path="/formulario" element={<FinalizarCompra />} />
+        <Route path="/formulario" element={<FinalizarCompra carrito={carrito} total={total} vaciarCarrito={vaciarCarrito}/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+
+      <ToastContainer position="bottom-end" className="p-3 position-fixed" style={{ zIndex: 1055 }}>
+      <Toast 
+        key={notificacion} 
+        show={Boolean(notificacion)} 
+        onClose={() => setNotificacion(null)} 
+        delay={3000} 
+        autohide 
+        bg="success"
+      >
+        <Toast.Body className="text-white d-flex justify-content-between align-items-center">
+          <span>{notificacion}</span>
+          <button 
+            type="button" 
+            className="btn-close btn-close-white ms-2" 
+            onClick={() => setNotificacion(null)}
+          />
+        </Toast.Body>
+      </Toast>
+    </ToastContainer>
     </BrowserRouter>
   );
 }

@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
-function AppNavbar() {
+function AppNavbar({cantidadTotal}) {
   return (
     <Navbar expand="lg" className={styles.navbar}>
       <Container>
@@ -54,7 +54,7 @@ function AppNavbar() {
               to="/carrito"
               className={`${styles.btnCarrito} ms-lg-2`}
             >
-              🛒 Carrito <span className={styles.badgeCarrito}>0</span>
+              🛒 Carrito <span className={styles.badgeCarrito}>{cantidadTotal}</span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
